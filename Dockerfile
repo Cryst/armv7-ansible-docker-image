@@ -7,6 +7,5 @@ RUN echo -e '[local]\nlocalhost' > /etc/ansible/hosts
 
 # Latest version of cryptography 3.5.0 requires unavailable Rust compiler package
 ENV CRYPTOGRAPHY_DONT_BUILD_RUST=1
-RUN pip3 install --no-cache-dir --user cryptography==3.4.8
-
-RUN pip3 install --no-cache-dir --user ansible
+RUN pip3 install --no-cache-dir cryptography==3.4.8
+RUN pip3 install --no-cache-dir ansible
