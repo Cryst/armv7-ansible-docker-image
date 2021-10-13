@@ -12,5 +12,3 @@ RUN apt install ansible -y
 #RUN pip install --no-cache-dir -r requirements.txt
 #COPY . .
 #CMD [ "python", "./your-daemon-or-script.py" ]
-
-CMD [ "/bin/bash" ]
